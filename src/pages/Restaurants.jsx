@@ -10,6 +10,8 @@ export default function Restaurants() {
         <h1>Restaurants</h1>
         <div className="row">
           <div className="col-md-12">
+
+          
             <div className="card mb-3">
               <div className="card-body p-4">
                 <div className="d-flex">
@@ -63,7 +65,7 @@ export default function Restaurants() {
                       wood-fired pizzas, and classic wines in a warm atmosphere.
                     </p>
                     <p>Rating: 4.5 | Closed</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/2" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
@@ -94,7 +96,7 @@ export default function Restaurants() {
                       wood-fired pizzas, and classic wines in a warm atmosphere.
                     </p>
                     <p>Rating: 4.5 | Closed</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/3" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
@@ -124,7 +126,7 @@ export default function Restaurants() {
                       wood-fired pizzas, and classic wines in a warm atmosphere.
                     </p>
                     <p>Rating: 4.5 | Closed</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/4" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
@@ -156,7 +158,7 @@ export default function Restaurants() {
                       India.
                     </p>
                     <p>Rating: 4.7 | Open Now</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/5" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
@@ -188,7 +190,7 @@ export default function Restaurants() {
                       India.
                     </p>
                     <p>Rating: 4.7 | Open Now</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/6" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
@@ -197,6 +199,36 @@ export default function Restaurants() {
             </div>
 
 
+            {/* <div className="card mb-3">
+              <div className="card-body p-4">
+                <div className="d-flex">
+                  <div>
+                    <img
+                      src="https://assets.bonappetit.com/photos/610aa6ddc50e2f9f7c42f7f8/16:9/w_1080%2Cc_limit/Savage-2019-top-50-busy-restaurant.jpg"
+                      alt="Taste of India"
+                      className="img-fluid rounded"
+                      style={{
+                        maxwidth: '300px',
+                        height: '200px',
+                        paddingRight: '15px',
+                      }}
+                    />
+                  </div>
+                  <div>
+                    <h3>Taste of India</h3>
+                    <p>
+                      Enjoy authentic Indian cuisine at Taste of India. Explore
+                      a variety of delicious dishes from different regions of
+                      India.
+                    </p>
+                    <p>Rating: 4.7 | Open Now</p>
+                    <Link to="/restaurants/7" className="btn btn-primary">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="card mb-3">
               <div className="card-body p-4">
                 <div className="d-flex">
@@ -220,45 +252,13 @@ export default function Restaurants() {
                       India.
                     </p>
                     <p>Rating: 4.7 | Open Now</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
+                    <Link to="/restaurants/8" className="btn btn-primary">
                       Read More
                     </Link>
                   </div>
                 </div>
               </div>
-            </div>
-
-
-            <div className="card mb-3">
-              <div className="card-body p-4">
-                <div className="d-flex">
-                  <div>
-                    <img
-                      src="https://assets.bonappetit.com/photos/610aa6ddc50e2f9f7c42f7f8/16:9/w_1080%2Cc_limit/Savage-2019-top-50-busy-restaurant.jpg"
-                      alt="Taste of India"
-                      className="img-fluid rounded"
-                      style={{
-                        maxwidth: '300px',
-                        height: '200px',
-                        paddingRight: '15px',
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <h3>Taste of India</h3>
-                    <p>
-                      Enjoy authentic Indian cuisine at Taste of India. Explore
-                      a variety of delicious dishes from different regions of
-                      India.
-                    </p>
-                    <p>Rating: 4.7 | Open Now</p>
-                    <Link to="/restaurants/1" className="btn btn-primary">
-                      Read More
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

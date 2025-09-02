@@ -3,23 +3,23 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const RestaurantDetails = () => {
-    const restaurantId = useParams()
-    console.log("Restaurants Id: ",restaurantId)
+  const restaurantsId = useParams();
+  console.log("Restaurant Id:> ", restaurantsId);
 
   const restaurants = [
-      {
-        id: "1",
-        name: "Spice Junction",
-        cuisine: "Indian",
-        location: "456 Elm Street, Townsville",
-        rating: 4.2,
-        description: "Savor the flavors of India with our traditional dishes.",
-        menu: [
-          { name: "Butter Chicken", price: "$14" },
-          { name: "Paneer Tikka Masala", price: "$12" },
-          { name: "Gulab Jamun", price: "$6" },
-        ],
-      },
+    {
+      id: "1",
+      name: "Spice Junction",
+      cuisine: "Indian",
+      location: "456 Elm Street, Townsville",
+      rating: 4.2,
+      description: "Savor the flavors of India with our traditional dishes.",
+      menu: [
+        { name: "Butter Chicken", price: "$14" },
+        { name: "Paneer Tikka Masala", price: "$12" },
+        { name: "Gulab Jamun", price: "$6" },
+      ],
+    },
     {
       id: "2",
       name: "The Golden Spoon",
@@ -86,19 +86,21 @@ const RestaurantDetails = () => {
       ],
     },
   ];
+
   const restaurantData = restaurants.find(
-    (restaurant) => restaurant.id === restaurantId
+    (restaurant) => restaurant.id === restaurantsId.restaurantsId
   );
+  console.log("Restaurants Data:> ", restaurantData);
 
   if (!restaurantData) {
     return (
-      <div>
+      <>
         <Header />
         <main className="container py-4">
           <h2>Restaurant Not Found</h2>
         </main>
         <Footer />
-      </div>
+      </>
     );
   }
 
@@ -107,15 +109,21 @@ const RestaurantDetails = () => {
       <Header />
       <main className="container py-4">
         <h1>{restaurantData.name}</h1>
-        <p><strong>Cuisine:</strong> {restaurantData.cuisine}</p>
-        <p><strong>Location:</strong> {restaurantData.location}</p>
-        <p><strong>Rating:</strong> {restaurantData.rating}</p>
+        <p>
+          <strong>Cuisine:</strong> {restaurantData.cuisine}
+        </p>
+        <p>
+          <strong>Location:</strong> {restaurantData.location}
+        </p>
+        <p>
+          <strong>Rating:</strong> {restaurantData.rating}
+        </p>
         <p>{restaurantData.description}</p>
 
         <h3>Menu</h3>
-        <ul>
+        <ul className="list-group">
           {restaurantData.menu.map((item, index) => (
-            <li key={index}>
+            <li className="list-group-item" key={index}>
               {item.name} - {item.price}
             </li>
           ))}
@@ -125,4 +133,4 @@ const RestaurantDetails = () => {
     </div>
   );
 };
-export default RestaurantDetails
+export default RestaurantDetails;
