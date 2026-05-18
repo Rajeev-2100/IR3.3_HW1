@@ -1,12 +1,44 @@
-# React + Vite
+# My Food Delivery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Food Delivery Website app where you can show the list of Restaurants, restaurnats details and about page. That website is responsive. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Demo Link
 
-## Expanding the ESLint configuration
+[Live Demo](https://ir-3-3-hw-1.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Quick Start
+
+```
+git clone https://github.com/Rajeev-2100/IR3.3_HW1.git
+cd IR3.3_HW1.git
+npm install
+npm run dev      # or `npm start` / `yarn dev`
+```
+
+## Technologies
+- React JS
+- React Router
+
+## Demo Video
+[Loom Video Link] (https://youtu.be/-BztarNJrSs)
+
+## Features
+**Home**
+- Display a list of all restaurants
+
+**About**
+- About the our Restaurant
+
+**Restaurant Page**
+-- List of all Restaurants Page With the button
+
+**Restaurant Detail Page**
+-- Details like as Restaurant Name, Cuisine Name, Location Name, Rating, short description about restaurant and menu 
+
+## Contact
+For bugs or feature requests, please reach out to rajeevrawat210@gmail.com
+
